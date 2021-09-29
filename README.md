@@ -40,16 +40,17 @@ Split the yuv video file into frames.
 python convert.py
 ```
 
-Create I frames. We need to create I frames by H.265 with QP of 22,27,32,37.
+Create I frames. We need to create I frames by H.265 with QP of 22,27,32,37. The setting of the compressed I frame affects the compression performance. According to this setting (set QP as 22,27,32,37), the results obtained when testing is consistent with the DVC paper. 
+
 ```
 cd CreateI
 sh h265.sh $qp 1920 1024
 ```
-After finished the generating of I frames of each QP, you need to use bpps of each video in `result.txt` to fill the bpps in Class HEVCDataSet in `dataset.py`.
+After finished the generating of I frames of each QP, you need to use bpps of each video in `result.txt` to fill the bpps in Class `HEVCDataSet` in `dataset.py`.
 
 ## Test
 
-Set the path of the trained model in the `main_dvc` file, and enable `args.hevctest`. 
+Set the path of the trained model in the `main_dvc.py` file, and enable `args.hevctest`. 
 
 ```
 python main_dvc.py --config test_1024.json
