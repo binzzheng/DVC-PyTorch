@@ -28,7 +28,7 @@ If you want to change the training settings, you can modify the corresponding js
 
 The HEVC test sequence is used to test the video compression performance, you can download it and put it in `./data/h265_compress/videos/`. The test process here is based on the class B in the HEVC test sequence. You can test other common datasets such as UVG in a similar way. 
 
-The video processed by DVC has a resolution limit, and here you need to manually crop the video to a multiple of 64. Take the class B in the hevc test sequence as an example, you need to crop 1920x1080 to 1920x1024.
+The video processed by DVC has a resolution limit, and here you need to manually crop the video to a multiple of 64. Take the class B in the HEVC test sequence as an example, you need to crop 1920x1080 to 1920x1024.
 
 ```
 cd data/h265_compress/
