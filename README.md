@@ -57,7 +57,7 @@ python main_dvc.py --config test_1024.json
 
 ## Improve on the basis of DVC 
 
-You can edit the `net_dvc` file. The specific components that build it are in the `subnet` folder. Only `forward` is executed during training, and `compress` and `decompress` need to be executed during testing. Make sure that the two parts correspond. 
+You can edit the `net_dvc.py` file. The specific components that build it are in the `subnet` folder. Only `forward` is executed during training, and `compress` and `decompress` need to be executed during testing. Make sure that the two parts correspond. 
 
 
 ## Citation
