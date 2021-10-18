@@ -135,6 +135,11 @@ def main():
             #size_line.append(int(size[5:]))
             size = int(l.split(',')[4])
             size_line.append(size)
+        if "P-SLICE" in l:
+            #size = l.split(',')[1]
+            #size_line.append(int(size[5:]))
+            size = int(l.split(',')[4])
+            size_line.append(size)
 
     size_line = numpy.array(size_line)/(im_width*im_height)
     # print(size_line)
