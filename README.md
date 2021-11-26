@@ -73,4 +73,4 @@ If you find this paper useful, please cite:
 ```
 
 ## Acknowledement
-Most of the code comes from [PyTorchVideoCompression](https://github.com/binzzheng/PyTorchVideoCompression/tree/master/DVC). Thanks to [ZhihaoHu](https://github.com/ZhihaoHu) for the open source code. I replaced the entropy model used in it with the `EntropyBottleneck` class in [CompressAI](https://github.com/InterDigitalInc/CompressAI), and performed the actual compression and decompression during testing. 
+Most of the code comes from [PyTorchVideoCompression](https://github.com/ZhihaoHu/PyTorchVideoCompression/tree/master/DVC). Thanks to [ZhihaoHu](https://github.com/ZhihaoHu) for the open source code. I replaced the entropy model used in it with the `EntropyBottleneck` class in [CompressAI](https://github.com/InterDigitalInc/CompressAI), and performed the actual compression and decompression during testing. 
